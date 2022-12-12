@@ -1,4 +1,4 @@
-/*GENERELT*/
+                                                                /*GENERELT*/
 *{
     margin: 0;
     padding: 0;
@@ -44,7 +44,7 @@ p{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     color: #1f1f1f;
     font-size: 1vw;
-    line-height: 1.4vw;
+    line-height: 1.5vw;
 }
 
 
@@ -85,7 +85,7 @@ nav a{
     margin-inline: 20px;
 }
 
-/*Dropdown - tager udgangspunkt i eksempel på w3schools.com*/ 
+/*Dropdown - tager udgangspunkt i eksempel på dropdown-løsning på w3schools.com*/ 
 .dropdown{ 
     position: relative; 
     display: inline-block;
@@ -100,7 +100,7 @@ nav a{
 
     /*Samme som i nav a for at linjer og afstand flugter*/
     padding-top: 10px;
-    padding-left: 18px;
+    padding-left: 10px;
     margin-inline: 20px; 
 }  
     
@@ -152,7 +152,7 @@ main{
 }
 
 /*KORT*/
-.card{
+.card, .centercard{
     background-color: white;
     width: 97%;
     height: fit-content;
@@ -164,7 +164,9 @@ main{
 
     margin-top: 20px;
     margin-bottom: 50px;
+}
 
+.card{
     display: flex;
     justify-content: space-between;
 }
@@ -173,6 +175,10 @@ main{
     width: 50%;
     /*Luft mellem de to div'er i card*/
     margin-inline: 1%;
+}
+
+.centercard{
+    text-align: center;
 }
 
 
