@@ -5,6 +5,12 @@
     box-sizing: border-box;
 }
 
+/*Margin der giver luft til højre og venstre for indhold*/
+.headercontent, .footercontent, .card, .centercard{
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
 /*Alle billeder skal have 100% width, så størrelsen styres af en container div.*/
 img{
     width: 100%;
@@ -60,12 +66,15 @@ header{
     z-index: 2;
 }
 
-#headercontent{
-    margin-left: 20px;
-    margin-right: 20px;
+.headercontent{
     margin-top: 34px;
     display: flex;
     justify-content: space-between;
+}
+
+#medova_header{
+    width: 20%;
+    margin-top: -20px;
 }
 
 /*Navigation*/
@@ -123,11 +132,18 @@ footer{
     height: 370px;
     width: 100%;
     background-color: #2D358C;
+    margin-top: -5px;
+}
+
+/*Størrelse på logo*/
+#medova_footer{
+    width: 30%;
 }
 
 #list{
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
+    margin-right: 200px;
     margin-top: 40px;
 }
 
@@ -149,6 +165,7 @@ footer a{
 main{
     margin-top: 100px;
     background-color: #E9F3FB;
+    padding-bottom: 1px;
 }
 
 /*KORT*/
@@ -159,8 +176,6 @@ main{
     padding: 1.5%;
     border-radius: 15px;
     box-shadow: 0px 5px 5px rgba(45, 53, 140, 0.3);
-    margin-left: 20px;
-    margin-right: 20px;
 
     margin-top: 20px;
     margin-bottom: 50px;
@@ -207,3 +222,16 @@ main{
 }
 
 
+                                                                /*MEDIA QUERIES*/
+
+/*MOBIL*/ 
+@media screen and (max-width: 768px){
+
+}
+
+/*LAPTOP*/  
+@media screen and (min-width: 768px){
+    #burger_menu {
+        display: none;
+    }
+} 
