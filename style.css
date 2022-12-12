@@ -1,0 +1,73 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*Alle billeder skal have 100% width, så størrelsen styres af en container div.*/
+img{
+    width: 100%;
+}
+
+/*HEADER*/
+header{
+    background-color: #E9F3FB;
+    height: 120px;
+    width: 100%;
+    position: fixed;
+    z-index: 2;
+
+    
+}
+
+#headercontent{
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 34px;
+    display: flex;
+    justify-content: space-between;
+}
+
+/*Navigation*/
+nav a{
+    color: white;
+    text-decoration: none;
+    
+    /*styling af 'knapper' i nav*/
+    background-color: #2D358C;
+    border-radius: 25%;
+    padding-top: 15px;
+    padding-bottom: 20px;
+    padding-left: 20px;
+    padding-right: 25px;
+}
+
+/*Dropdown - tager udgangspunkt i eksempel på w3schools.com*/ 
+.dropdown { 
+    position: relative; 
+    display: inline-block; 
+} 
+      
+.dropdown-content { 
+    display: none; 
+    position: absolute; 
+    right: -60%;
+    background-color: #2D358C; 
+    min-width: 50px; 
+    padding-left: 20px; /*Samme som padding-left for knapper i nav*/
+    z-index: 3; 
+}  
+    
+.dropdown-content a{
+    padding: 0;
+}
+
+.dropdown:hover .dropdown-content{ 
+    display: block; 
+} 
+    
+.dropdown-content li{ 
+    list-style: none; 
+    text-align: left; 
+    margin-bottom: 10px; 
+} 
