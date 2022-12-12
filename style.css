@@ -1,3 +1,4 @@
+/*GENERELT*/
 *{
     margin: 0;
     padding: 0;
@@ -9,14 +10,54 @@ img{
     width: 100%;
 }
 
+/*Fonts*/
+h1, h2, h3,a{
+    color: #2D358C;
+}
+
+h2,h3,a{
+    font-family: 'Alice', serif;
+}
+
+h1{
+    font-family: 'Franklin Gothic Heavy';
+    font-size: 5vw;
+    text-align: center;
+    margin-top: 50px;
+}
+
+h2{
+    font-size: 2.5vw;
+    margin-bottom: 10px;
+}
+
+h3{
+    font-size: 2vw;
+}
+
+a{
+    font-size: 1vw;
+    text-decoration: none;
+}
+
+p{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #1f1f1f;
+    font-size: 1vw;
+    line-height: 1.4vw;
+}
+
+
+
 /*HEADER*/
 header{
     background-color: #E9F3FB;
+    box-shadow: 2px 2px 5px rgb(45, 53, 140,0.3);
     top: 0;
     height: 100px;
     width: 100%;
     position: fixed;
-    z-index: 2; 
+    z-index: 2;
 }
 
 #headercontent{
@@ -34,27 +75,33 @@ nav a{
     
     /*styling af 'knapper' i nav*/
     background-color: #2D358C;
-    border-radius: 25%;
-    padding-top: 15px;
-    padding-bottom: 20px;
-    padding-left: 20px;
-    padding-right: 25px;
+    border-radius: 20%;
+    padding-bottom: 15px;
+    
+    padding-top: 10px;
+    padding-left: 18px;
+    padding-right: 22px;
+
+    margin-inline: 20px;
 }
 
 /*Dropdown - tager udgangspunkt i eksempel på w3schools.com*/ 
 .dropdown{ 
     position: relative; 
-    display: inline-block; 
+    display: inline-block;
 } 
       
 .dropdown-content{ 
     display: none; 
     position: absolute; 
-    right: -60%;
-    background-color: #2D358C; 
-    min-width: 50px; 
-    padding-left: 20px; /*Samme som padding-left for knapper i nav*/
+    right: 0;
+    background-color: #2D358C;
     z-index: 3; 
+
+    /*Samme som i nav a for at linjer og afstand flugter*/
+    padding-top: 10px;
+    padding-left: 18px;
+    margin-inline: 20px; 
 }  
     
 .dropdown-content a{
@@ -97,7 +144,56 @@ footer a{
     line-height: 1.5vw;
 }
 
+
 /*MAIN*/
 main{
     margin-top: 100px;
+    background-color: #E9F3FB;
 }
+
+/*KORT*/
+.card{
+    background-color: white;
+    width: 97%;
+    height: fit-content;
+    padding: 1.5%;
+    border-radius: 15px;
+    box-shadow: 0px 5px 5px rgba(45, 53, 140, 0.3);
+    margin-left: 20px;
+    margin-right: 20px;
+
+    margin-top: 20px;
+    margin-bottom: 50px;
+
+    display: flex;
+    justify-content: space-between;
+}
+
+
+/*FORSIDE MAIN*/
+#forside{
+    margin-left: 0;
+    margin-right: 0;
+}
+
+
+
+/*MEDOVA TE - MAIN*/
+.card div{
+    width: 50%;
+    /*Luft mellem de to div'er i card*/
+    margin-inline: 1%;
+}
+
+.card>.illustration{
+    width: 25%;
+    margin-right: 10%;
+    margin-left: 10%;
+}
+
+/*Punktliste under produkter, variation box indrykkes*/
+.p_list{
+    margin-left: 20px;
+}
+
+
