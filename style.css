@@ -49,7 +49,7 @@ p{
 
 
 
-/*HEADER*/
+                                                                /*HEADER*/
 header{
     background-color: #E9F3FB;
     box-shadow: 2px 2px 5px rgb(45, 53, 140,0.3);
@@ -77,7 +77,7 @@ nav a{
     background-color: #2D358C;
     border-radius: 20%;
     padding-bottom: 15px;
-    
+
     padding-top: 10px;
     padding-left: 18px;
     padding-right: 22px;
@@ -118,7 +118,7 @@ nav a{
     margin-bottom: 10px; 
 } 
 
-/*FOOTER*/
+                                                                /*FOOTER*/
 footer{
     height: 370px;
     width: 100%;
@@ -145,7 +145,7 @@ footer a{
 }
 
 
-/*MAIN*/
+                                                                /*MAIN*/
 main{
     margin-top: 100px;
     background-color: #E9F3FB;
@@ -169,22 +169,21 @@ main{
     justify-content: space-between;
 }
 
-
-/*FORSIDE MAIN*/
-#forside{
-    margin-left: 0;
-    margin-right: 0;
-}
-
-
-
-/*MEDOVA TE - MAIN*/
 .card div{
     width: 50%;
     /*Luft mellem de to div'er i card*/
     margin-inline: 1%;
 }
 
+
+/*INDEX - MAIN*/
+#forside{
+    margin-left: 0;
+    margin-right: 0;
+}
+
+/*MEDOVA TE - MAIN*/
+/*styrer størrelse og placering af illustrationer i kort*/
 .card>.illustration{
     width: 25%;
     margin-right: 10%;
@@ -194,6 +193,11 @@ main{
 /*Punktliste under produkter, variation box indrykkes*/
 .p_list{
     margin-left: 20px;
+}
+
+/*HISTORIEN BAG - MAIN*/
+#movetoright{
+    margin-left: 50%;
 }
 
 
