@@ -6,7 +6,7 @@
 }
 
 /*Margin der giver luft til højre og venstre for indhold*/
-.headercontent, .footercontent, .card, .centercard{
+.headercontent, .footercontent, .card, .centercard, #tips_card{
     margin-left: 20px;
     margin-right: 20px;
 }
@@ -39,6 +39,7 @@ h2{
 
 h3{
     font-size: 2vw;
+    margin-top: 20px;
 }
 
 a{
@@ -168,8 +169,10 @@ main{
     padding-bottom: 1px;
 }
 
+
+
 /*KORT*/
-.card, .centercard{
+.card, .centercard, #tips_card{
     background-color: white;
     width: 97%;
     height: fit-content;
@@ -181,12 +184,12 @@ main{
     margin-bottom: 50px;
 }
 
-.card{
+.card, #tips_card div{
     display: flex;
     justify-content: space-between;
 }
 
-.card div{
+.card div, #tips_card div div{
     width: 50%;
     /*Luft mellem de to div'er i card*/
     margin-inline: 1%;
@@ -196,19 +199,17 @@ main{
     text-align: center;
 }
 
-
-/*INDEX - MAIN*/
-#forside{
-    margin-left: 0;
-    margin-right: 0;
-}
-
-/*MEDOVA TE - MAIN*/
 /*styrer størrelse og placering af illustrationer i kort*/
 .card>.illustration{
     width: 25%;
     margin-right: 10%;
     margin-left: 10%;
+}
+
+/*INDEX - MAIN*/
+#forside{
+    margin-left: 0;
+    margin-right: 0;
 }
 
 /*Punktliste under produkter, variation box indrykkes*/
@@ -221,6 +222,19 @@ main{
     margin-left: 50%;
 }
 
+/*GØR EN FORSKEL - MAIN*/
+#punktliste{
+    margin-left: 20px;
+}
+
+.indryk{
+    margin-left: 50px;
+}
+
+li{
+    color: #2D358C;
+    font-size: 1.5vw;
+}
 
                                                                 /*MEDIA QUERIES*/
 
