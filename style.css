@@ -12,12 +12,11 @@ img{
 /*HEADER*/
 header{
     background-color: #E9F3FB;
-    height: 120px;
+    top: 0;
+    height: 100px;
     width: 100%;
     position: fixed;
-    z-index: 2;
-
-    
+    z-index: 2; 
 }
 
 #headercontent{
@@ -43,12 +42,12 @@ nav a{
 }
 
 /*Dropdown - tager udgangspunkt i eksempel på w3schools.com*/ 
-.dropdown { 
+.dropdown{ 
     position: relative; 
     display: inline-block; 
 } 
       
-.dropdown-content { 
+.dropdown-content{ 
     display: none; 
     position: absolute; 
     right: -60%;
@@ -71,3 +70,34 @@ nav a{
     text-align: left; 
     margin-bottom: 10px; 
 } 
+
+/*FOOTER*/
+footer{
+    height: 370px;
+    width: 100%;
+    background-color: #2D358C;
+}
+
+#list{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 40px;
+}
+
+footer li{
+    list-style: none; 
+    text-align: left;
+    color: white;
+}
+
+footer a{
+    color: white;
+    text-decoration: none;
+    font-size: 1.3vw;
+    line-height: 1.5vw;
+}
+
+/*MAIN*/
+main{
+    margin-top: 100px;
+}
