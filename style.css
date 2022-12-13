@@ -161,6 +161,10 @@ footer a{
     line-height: 1.5vw;
 }
 
+#footer_tekst{
+    font-size: 1vw;
+}
+
 
                                                                 /*MAIN*/
 main{
@@ -235,6 +239,17 @@ li{
     color: #2D358C;
     font-size: 1.5vw;
 }
+
+.instagram_row{
+    display: flex;
+    justify-content: center;
+}
+
+.insta_foto{
+    width: 25%;
+    border: solid 5px white;
+}
+
 
                                                                 /*MEDIA QUERIES*/
 
