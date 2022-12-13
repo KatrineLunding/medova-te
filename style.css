@@ -85,7 +85,7 @@ nav a{
     
     /*styling af 'knapper' i nav*/
     background-color: #2D358C;
-    border-radius: 20%;
+    border-radius: 25px;
     padding-bottom: 15px;
 
     padding-top: 10px;
@@ -110,7 +110,8 @@ nav a{
 
     /*Samme som i nav a for at linjer og afstand flugter*/
     padding-top: 10px;
-    padding-left: 10px;
+    padding-left: 16px;
+
     margin-inline: 20px; 
 }  
     
@@ -349,7 +350,7 @@ li{
 
 /*Skiftende baggrundsfarve på links i menu*/
 .menu_lys{
-    background-color: rgb(255, 255, 255, 0,5);
+    background-color: rgb(255, 255, 255, 0.4);
 }
 
 .menu_dark{
