@@ -128,6 +128,15 @@ nav a{
     margin-bottom: 10px; 
 } 
 
+.burger_menu{
+    margin-top: -20px;
+}
+
+.burger_menu a{
+    font-size: 8vw;
+    color: #2D358C;
+}
+
                                                                 /*FOOTER*/
 footer{
     height: 370px;
@@ -157,12 +166,12 @@ footer li{
 footer a{
     color: white;
     text-decoration: none;
-    font-size: 1.3vw;
-    line-height: 1.5vw;
+    font-size: 1.5vw;
+    line-height: 1.7vw;
 }
 
 #footer_tekst{
-    font-size: 1vw;
+    font-size: 1.2vw;
 }
 
 
@@ -178,7 +187,6 @@ main{
 /*KORT*/
 .card, .centercard, #tips_card{
     background-color: white;
-    width: 97%;
     height: fit-content;
     padding: 1.5%;
     border-radius: 15px;
@@ -250,17 +258,151 @@ li{
     border: solid 5px white;
 }
 
+/*MOBIL MENU*/
+.menu_lys, .menu_dark{
+    width: 100%;
+    height: 80px;
+}
+
+.menu_lys div, .menu_dark div{
+    padding-top: 30px;
+    margin-left: 40px;
+}
+
+/*Skriftsstørrelse på links i menu*/
+.menu_lys a, .menu_dark a{
+    font-size: 5vw;
+}
+
+/*Skiftende baggrundsfarve på links i menu*/
+.menu_lys{
+    background-color: rgb(255, 255, 255, 0,5);
+}
+
+.menu_dark{
+    background-color: #2d358c;
+}
+
+/*Skriftfarve på links i menu*/
+.menu_lys a{
+    color: #2D358C;}
+
+.menu_dark a{
+    color: white;
+}
+
+/*Tilpasning af undermenu-punkter*/
+.menu_lys .undermenu, .menu_dark .undermenu{
+    margin-left: 60px;
+}
+
+.menu_lys .undermenu a, .menu_dark .undermenu a{
+    font-size: 3.5vw;
+}
+
+
 
                                                                 /*MEDIA QUERIES*/
 
 /*MOBIL*/ 
 @media screen and (max-width: 768px){
+    /*Fonts*/
+    p,a{
+        font-size: 2.2vw;
+        line-height: 2.5vw;
+    }
 
+    h1{
+        font-size: 6vw;
+    }
+
+    h2{
+        font-size: 4vw;
+    }
+
+    h3{
+        font-size: 3.5vw;
+    }
+
+    /*Header*/ 
+    nav {
+        display: none;
+    }
+
+    #medova_header{
+        width: 50%;
+    }
+
+    /*KORT - fra række til kolonne*/
+    .card, .centercard, #tips_card{
+        margin-bottom: 30px;
+    }
+    
+    .card, #tips_card div{
+        flex-direction: column;
+    }
+
+    .card div, #tips_card div div{
+        width: 100%;
+        /*Luft mellem de to div'er i card*/
+        margin-bottom: 1%;
+    }
+
+    /*styrer størrelse og placering af illustrationer i kort*/
+    .card>.illustration{
+        width: 50%;
+        margin-right: 25%;
+        margin-left: 25%;
+    }
+
+    /*FOOTER*/
+    footer{
+        height: 200px;
+    }
+
+    /*Størrelse på logo*/
+    #medova_footer{
+        width: 40%;
+    }
+
+    #list{
+        margin-right: 50px;
+        margin-top: 20px;
+    }
+
+    footer a{
+        font-size: 2.3vw;
+        line-height: 2.5vw;
+    }
+
+    #footer_tekst{
+        font-size: 2vw;
+    }
+
+    /*INDEX - MAIN*/
+    #forside_laptop{
+        display: none;
+    }
+
+    /*GØR EN FORSKEL - MAIN*/
+    .instagram_row{
+        flex-wrap: wrap;
+    }
+    
+    .insta_foto{
+        width: 50%;
+        border: solid 5px white;
+    }
 }
+
 
 /*LAPTOP*/  
 @media screen and (min-width: 768px){
-    #burger_menu {
+    .burger_menu {
         display: none;
     }
-} 
+
+    #forside_mobil{
+        display: none;
+    }
+}
