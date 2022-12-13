@@ -128,6 +128,7 @@ nav a{
     margin-bottom: 10px; 
 } 
 
+/*Burgermenu*/
 .burger_menu{
     margin-top: -20px;
 }
@@ -136,6 +137,8 @@ nav a{
     font-size: 8vw;
     color: #2D358C;
 }
+
+
 
                                                                 /*FOOTER*/
 footer{
@@ -226,6 +229,39 @@ main{
     margin-right: 0;
 }
 
+/*Slideshow på forsiden - animationen følger samme løsning på et slideshow
+som vi i gruppe 5 hold C (Catrine Pedersen, Katrine Brun Lunding, Marie-Louise Spjeldnaes og Rikke Kodahl)
+brugte i Mobile First projektet om Naturhistorisk museum til vores slideshow på forsiden*/
+@keyframes slide {
+    0% { transform: translateX( -100% ); }
+    5% { transform: translateX(0);}
+    25% { transform: translateX(0);}
+    30% { transform: translateX(100%);}
+    60% { transform: translateX( 100% ); }
+    65% { transform: translateX( 0 ); }
+    85% { transform: translateX( 0 ); }
+    90% { transform: translateX( -100% ); }
+    100% { transform: translateX( -100% ); }
+}
+
+#slideshow {
+    width: 100%;
+    z-index: -1;
+    overflow: hidden;
+}
+    
+#slide_forskel {
+    position: absolute;
+    top: 100px;
+    left: 0;
+    
+    width: 100%;
+      
+    transform: translateX( 100% );
+      
+    animation: slide 30s linear infinite;
+}
+
 
 
 /*MEDOVA TE - MAIN*/
@@ -237,30 +273,18 @@ main{
 /*Ikoner under produktbilleder flexes*/
 .ikoner_row{
     display: flex;
+    justify-content: left;
 }
 
 /*Virker ikke endnu!
-
 Nyhedsskilt på Variation box kort
 #nyhed{
-    background-color: #F86106;
-
-    width: 100px;
-    padding-top: 2px;
-    padding-bottom: 1px;
-    
     position: relative;
     left: 20px;
     top: 67px;
     z-index: 1;
-}
 
-#nyhed p{
-    color: white;
-    font-family: 'Alice', serif;
-    font-size: 1.3vw;
-
-    margin-left: 26px;
+    width: 70px;
 }
 
 .card .variation_kort{
@@ -453,8 +477,6 @@ li{
         width: 50%;
         border: solid 5px white;
     }
-
-    
 }
 
 
