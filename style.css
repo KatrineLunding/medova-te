@@ -234,15 +234,15 @@ main{
 som vi i gruppe 5 hold C (Catrine Pedersen, Katrine Brun Lunding, Marie-Louise Spjeldnaes og Rikke Kodahl)
 brugte i Mobile First projektet om Naturhistorisk museum til vores slideshow på forsiden*/
 @keyframes slide {
-    0% { transform: translateX( -100% ); }
+    0% { transform: translateX(-100%); }
     5% { transform: translateX(0);}
     25% { transform: translateX(0);}
     30% { transform: translateX(100%);}
-    60% { transform: translateX( 100% ); }
-    65% { transform: translateX( 0 ); }
-    85% { transform: translateX( 0 ); }
-    90% { transform: translateX( -100% ); }
-    100% { transform: translateX( -100% ); }
+    60% { transform: translateX(100%); }
+    65% { transform: translateX(0); }
+    85% { transform: translateX(0); }
+    90% { transform: translateX(-100%); }
+    100% { transform: translateX(-100%); }
 }
 
 #slideshow {
@@ -258,7 +258,7 @@ brugte i Mobile First projektet om Naturhistorisk museum til vores slideshow på
     
     width: 100%;
       
-    transform: translateX( 100% );
+    transform: translateX(100%);
       
     animation: slide 30s linear infinite;
 }
@@ -277,20 +277,6 @@ brugte i Mobile First projektet om Naturhistorisk museum til vores slideshow på
     justify-content: left;
 }
 
-/*Virker ikke endnu!
-Nyhedsskilt på Variation box kort
-#nyhed{
-    position: relative;
-    left: 20px;
-    top: 67px;
-    z-index: 1;
-
-    width: 70px;
-}
-
-.card .variation_kort{
-    margin-top: 20px;
-}*/
 
 /*Punktliste under produkter, variation box indrykkes*/
 .p_list{
@@ -381,9 +367,9 @@ li{
 /*MOBIL*/ 
 @media screen and (max-width: 768px){
     /*Fonts*/
-    p,a{
-        font-size: 2.2vw;
-        line-height: 2.5vw;
+    p,a, #footer_tekst{
+        font-size: 3.5vw;
+        line-height: 4vw;
     }
 
     h1{
@@ -391,11 +377,11 @@ li{
     }
 
     h2{
-        font-size: 4vw;
+        font-size: 5vw;
     }
 
     h3{
-        font-size: 3.5vw;
+        font-size: 4.5vw;
     }
 
     /*Header*/ 
@@ -440,21 +426,17 @@ li{
     }
 
     #list{
-        margin-right: 50px;
+        margin-right: 40px;
         margin-top: 20px;
     }
 
     footer a{
-        font-size: 2.3vw;
-        line-height: 2.5vw;
-    }
-
-    #footer_tekst{
-        font-size: 2vw;
+        font-size: 4vw;
+        line-height: 4.5vw;
     }
 
     /*INDEX - MAIN*/
-    #forside_laptop{
+    .forside_laptop{
         display: none;
     }
 
@@ -487,7 +469,7 @@ li{
         display: none;
     }
 
-    #forside_mobil{
+    .forside_mobil{
         display: none;
     }
 }
