@@ -250,7 +250,8 @@ brugte i Mobile First projektet om Naturhistorisk museum til vores slideshow på
     z-index: -1;
     overflow: hidden;
 }
-    
+
+/*Gør en forskel-banner som skal bevæge sig*/
 #slide_forskel {
     position: absolute;
     top: 100px;
